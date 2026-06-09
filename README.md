@@ -1,7 +1,6 @@
 # miguelborges.dev
 
 [![CI](https://github.com/mborges-dev/miguel-borges-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/mborges-dev/miguel-borges-portfolio/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Live site](https://img.shields.io/badge/live-miguelborges.dev-3BD66D.svg)](https://miguelborges.dev)
 
 Personal portfolio for Miguel Borges — AI Engineer based in Lisbon, Portugal.  
@@ -112,6 +111,13 @@ npm run build     # outputs static site to ./out
 Deploy `./out` to Cloudflare Pages:
 - Dashboard: Pages → Create application → Direct upload → select `./out`
 - Git integration: set build command `npm run build`, output directory `out`
+
+---
+
+
+## Notice
+
+This repository is published as a **portfolio showcase** of my work. The code is **not licensed for reuse, redistribution, or modification.** You're welcome to read it, but it is not open source. If you'd like to discuss similar work, [get in touch](mailto:hello@miguelborges.dev).
 
 ---
 

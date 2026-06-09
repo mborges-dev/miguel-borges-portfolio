@@ -1,5 +1,9 @@
 # miguelborges.dev
 
+[![CI](https://github.com/mborges-dev/miguel-borges-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/mborges-dev/miguel-borges-portfolio/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Live site](https://img.shields.io/badge/live-miguelborges.dev-3BD66D.svg)](https://miguelborges.dev)
+
 Personal portfolio for Miguel Borges — AI Engineer based in Lisbon, Portugal.  
 Single-page, statically exported, zero JS animation libraries.
 

@@ -3,6 +3,28 @@ import { WorkCard, type Work as WorkType } from './WorkCard';
 
 const works: WorkType[] = [
   {
+    year: '2026',
+    status: 'LIVE',
+    statusExtra: 'Active',
+    title: 'Fleet HQ',
+    role: 'Solo Builder',
+    description:
+      'A single-operator command center for running teams of Claude agents. CLI + live 3D dashboard + opinionated runtime — built on tmux, Bash and plain files, no orchestration framework.',
+    stack: ['Claude Code', 'tmux', 'Bash', 'Node', 'Three.js', 'SSE'],
+    link: { label: 'github.com/mborges-dev/fleet-hq', href: 'https://github.com/mborges-dev/fleet-hq' },
+    art: 'terminal',
+    terminalLines: [
+      '$ fleet new research ~/agents/research',
+      '$ fleet tell research "map B2B logistics vendors"',
+      '$ fleet dashboard',
+      '→ 3 agents active · 0 asks · DND 22:00-09:00',
+      '',
+      '[research]  Searching: G2 logistics',
+      '[writer]    Reading report.md',
+      '[fact-check]  Writing review.md',
+    ],
+  },
+  {
     year: '2025',
     status: 'LIVE',
     statusExtra: 'Active',
@@ -14,35 +36,36 @@ const works: WorkType[] = [
     link: { label: 'thefacio.com', href: 'https://thefacio.com' },
   },
   {
+    year: '2026',
+    status: 'LIVE',
+    statusExtra: 'Open',
+    title: 'Extraction Evals',
+    role: 'Solo Builder',
+    description:
+      'A reproducible benchmark for LLM-based structured extraction from documents. Compares Claude / GPT / Gemini on Portuguese invoices, receipts and CVs across four prompt strategies — with cost and latency tracking per call.',
+    stack: ['Python', 'Pydantic', 'Anthropic SDK', 'OpenAI SDK', 'uv', 'CI'],
+    link: { label: 'github.com/mborges-dev/extraction-evals', href: 'https://github.com/mborges-dev/extraction-evals' },
+    art: 'terminal',
+    terminalLines: [
+      '$ ./scripts/run.sh -m claude-sonnet-4-5 gpt-4o',
+      'Eval matrix:  2 models × 4 prompts × 7 docs = 56 calls',
+      '',
+      '  claude-sonnet-4-5 × v1_baseline    F1: 0.84  $0.012',
+      '  claude-sonnet-4-5 × v3_few_shot    F1: 0.91  $0.018',
+      '  gpt-4o-2024-11-20 × v1_baseline    F1: 0.79  $0.009',
+      '  gpt-4o-2024-11-20 × v3_few_shot    F1: 0.87  $0.014',
+    ],
+  },
+  {
     year: '2025',
-    status: 'PRIVATE',
+    status: 'LIVE',
+    statusExtra: 'Demos',
     title: 'DocFlow',
     role: 'Solo Builder',
     description:
-      'Logistics dashboard with AI document extraction. Pilot built for a distribution company in Portugal — automating manual data entry across thousands of weekly delivery notes.',
-    stack: ['OCR', 'GPT-4o Vision', 'Next.js', 'Supabase', 'Cloudflare'],
-    noLinkLabel: 'Case study on request',
-  },
-  {
-    year: '2026',
-    status: 'LOCAL',
-    statusExtra: 'Beta',
-    title: 'Mini-Miguel',
-    role: 'Solo Builder',
-    description:
-      'A background AI agent that runs in your terminal, acts as your operational double, and respects rules about when to interrupt you and when to work autonomously.',
-    stack: ['Claude', 'TypeScript', 'Bun', 'Local-first', 'MCP'],
-    noLinkLabel: 'GitHub coming soon',
-    art: 'terminal',
-    terminalLines: [
-      '$ mini-miguel start',
-      '→ context loaded (4,231 entries)',
-      '→ watching: calendar, email, code, browser',
-      '→ mode: respectful — won\'t interrupt before 9am',
-      '',
-      '[12:14] flagged: pricing decision needs you. queueing.',
-      '[12:31] handled: scheduled call with Maria, no input needed.',
-    ],
+      'AI document extraction pipeline for logistics and distribution. Built under a client engagement for a Portuguese distribution operation — automating manual data entry across thousands of weekly delivery notes. Live demos available as anonymized recreations.',
+    stack: ['GPT-4o Vision', 'Cloudflare R2 + Workers', 'Supabase', 'SAP S/4HANA', 'Next.js'],
+    link: { label: 'mborges-dev.github.io/docflow', href: 'https://mborges-dev.github.io/docflow/' },
   },
   {
     year: '2026',
@@ -52,7 +75,7 @@ const works: WorkType[] = [
     description:
       'AI-powered HR software for SMBs. Automating onboarding, time tracking, and people ops for teams that don\'t need (or can\'t afford) enterprise HR platforms.',
     stack: ['Claude', 'Next.js', 'Supabase', 'Stripe'],
-    noLinkLabel: 'Launching late 2026',
+    link: { label: 'github.com/mborges-dev/almi-platform', href: 'https://github.com/mborges-dev/almi-platform' },
     art: 'dashed',
   },
 ];
